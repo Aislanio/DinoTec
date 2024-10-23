@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Oswald:wght@200..700&family=Radley:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+:root{
+    --main-green: #12dc1c;
+    --main-orange:#FF6500;
+    --main-family:"Oswald", sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;;
+    background: #202020;
+}
+/*Começo do Corpo*/
+
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Ojuju", sans-serif;
+    padding: 2vh 4vh;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 10vh;
+}
+
+.nav_link ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav_link ul li {
+    margin-right: 4vh;
+    font-size: 1.3em;
+}
+
+.nav_link ul li a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+.nav_link ul li a:hover{
+  color: #2cb834;
+  transition: color 0.3s;
+}
+
+.user_gadst{
+    width: 17%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.user_gadst div span{
+    cursor: pointer;
+    font-size: 4.7vh;
+    color: #12dc1c;
+}
+.user_gadst div span:hover{
+    color: #ff581a;
+    
+    transition: color 0.4s;
+}
+.user_gadst a{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.user_gadst a span{
+ margin-right: 1.3vh;
+}
+.carrinho{
+    position: relative;
+}
+.carrinho .carrinho_quantidade {
+    width: 4vh;
+    height: 4vh;
+    background-color: #ff581a;
+    position: absolute;
+    
+    top: -2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -10px;
+    border-radius: 5vh;
+    z-index: -1;
+    color: white;
+}
+.user_gadst div span:hover + .carrinho_quantidade{
+    background-color: #12dc1c;
+    color: white;
+    transition: background-color 0.4s;
+
+}
+.btn_nav {
+    width: 10%;
+    height: 70%;
+    background-color: #2cb834;
+    color: #fff;
+    padding: 2vh 4vh;
+    border-radius: 2vh;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+.btn{
+    background-color: #2cb834;
+    color: #fff;
+    padding: 2vh 4vh;
+    border-radius: 2vh;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_nav:hover {
+    background-color: #228c28;
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/*Produto*/
+
+.produto {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+.produto article {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+.produto .Minidescricao{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.produto .imgs{
+    width: 110vh;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.produto .imgs .carrossel{
+    width: 60vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vh;
+    
+}
+.produto .imgs .carrossel img{
+    width: 100%;
+    max-width: 20vh;
+    margin-top: 0.5vh;
+
+    cursor: pointer;
+}
+.produto .imgs img{
+   width: 100%;
+    max-width: 80vh;
+}
+.produto .Minidescricao h2{
+    color:white;
+    font-size:3em;
+    max-width: 80vh;
+    font-family: var(--main-family);
+    margin-left: 1vh;
+}
+
+.produto .Minidescricao p{
+    color:white;
+    font-size:2em;
+    font-family: var(--main-family);
+
+    margin-top: 1vh ;
+}
+.produto .Minidescricao span{
+    color:var(--main-orange);
+    font-size:1.9em;
+    margin-top:3vh;
+}
+
+.btn{
+    background-color: #2cb834;
+    color: #fff;
+    padding: 4vh 10vh;
+    border-radius: 2vh;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-top: 0.7vh   ;
+}
+.btn:hover {
+    background-color: #228c28;
+    transform: translateY(-5px);
+
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+.produto .imagem img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.produto .descricao {
+    flex: 1;
+}
+
+.descricaoCompleta{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.SobreProtudo{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5vh;
+    margin-top: 8vh;    
+}
+.SobreProtudo section{
+    width: 100%;
+    min-height: 40%;
+    background-color: white;
+    border-radius: 1vh;
+    padding: 5vh;
+    margin-top: 2vh;
+}
+#title-descri,.SobreProtudo #descr div{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 2.5em;
+    margin-bottom: 2.5vh;
+    font-family: var(--main-family);
+
+}
+#title-descri span,.SobreProtudo #descr div span{
+    color:var(--main-green);
+    font-size: 1.3em;
+    margin-right: 0.7vh;
+}
+
+#title-descri p,.SobreProtudo #descr p {
+    width: 80%;
+    font-size: 1.3em;
+    line-height: 1.4; 
+    color: #333;
+    font-weight: 400; 
+    font-family: Arial, sans-serif; 
+    margin-bottom: 10px; 
+}
+.classificacao{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.classificacao article{
+    width: 90%;
+    min-height: 30vh;
+    box-shadow: 10px 12px 30px rgba(0,0,0,0.1);
+
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 2vh;
+
+    cursor: pointer;
+}
+
+.classificacao article:hover{
+    box-shadow: 0 20px 24px rgba(0,0,0,0.1);
+    transform: translateY(-0.5vh);
+}
+
+
+.classificacao article .usuario-info{
+    width: 90%;
+    height: 10vh;
+    display: flex;
+   align-items: center;
+
+   border-bottom: 1px solid black;
+}
+.nome-usuario{
+    font-size: 2em;
+    color:black;
+    font-family: var(--main-family);
+    margin: 0 2vh 0 2vh;
+}
+
+.classificacao .usuario-info img {
+    width: auto;    
+    max-width: 7vh;
+    border-radius: 50%; 
+}
+
+.comentario-imgs{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    margin: 3vh 0vh 3vh 0vh;
+}
+
+.comentario-imgs  img{
+    width: 100%;
+    max-width: 15vh;
+    margin-right: 1vh;
+    filter: grayscale(50%);
+}
+.comentario-imgs  img:hover{
+    filter: grayscale(0%);
+}
+.comentario-imgs img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+}
+
+.star_classificacao{
+    color: var(--main-green);
+    font-size: 1.9em;
+}
+
+
+.comentario-texto{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+.comentario-texto p{
+    font-size: 1.7em;
+    width: 85%;
+}
+
+/* Estilos para o rodapé */
+
+footer {
+    height: 50vh;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.img_expander{
+    position: fixed;
+    width: 212vh;
+    height: 100vh;
+    z-index: 2;
+    top: 0;
+    right:0;
+  
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #00000080;
+}
+.img_expander span{
+    font-size: 3.5em;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding-right: 20vh;
+
+}
+
+.img_expander span a{
+    background-color: var(--main-green);
+    padding: 1vh 1.5vh 1vh 1.5vh;
+    border-radius: 3vh;
+    transition:bakcground-color 3s;
+    text-align: center;
+}
+
+.img_expander span a:hover{
+    background-color: #12dc1c8b;
+}
+.img_expander img{
+    width: 100%;
+    max-width: 80vh;
+}

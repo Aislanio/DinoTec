@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Radley:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+:root {
+    --main-green: #12dc1c;
+    --main-orange: #FF6500;
+    --main-family: "Oswald", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #202020;
+    font-family: var(--main-family);
+}
+
+.error-container {
+    text-align: center;
+}
+
+.error-container h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: var(--main-green);
+}
+
+.error-container img {
+    width: 300px;
+    height: auto;
+}
+
+.error-container p {
+    font-size: 1.2rem;
+    color: var(--main-orange);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
